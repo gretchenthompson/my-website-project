@@ -260,7 +260,7 @@ textarea {
     page-break-after: avoid;
   }
 }
-/* RESET */
+/* RESET Below */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -309,25 +309,54 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* RESET */
+/* RESET Above */
+/* ////////////////////// */
+/* ////////////////////// */
+
 /* This is were I started */
+
+header p {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;  
+}
+
 body{
   font-family: 'Lato', sans-serif;
   line-height: 1.2;
   font-size: 1em;
 }
+
+/* .define {
+  background-color: red;
+}
+.testify {
+  background-color: yellow;
+} */
+
 img {
   max-width: 100%;
 }
+
 .bg-img {
   padding-bottom: 66%;
   background-size: cover;
+  text-align: left;
 }
+
 .kirin {
+  padding-top: 10%;
   background-image: url(../img/kirin.jpg);
 }
 .candles {
+  padding-top: 10%;
   background-image: url(../img/candles.jpg);
+}
+.succulents {
+  padding-top: 10%;
+  background-image: url(../img/succulents.jpg);
 }
 
 .content {
@@ -335,5 +364,43 @@ img {
   margin-left: auto;
   width: 90%;
   max-width: 1400px;
-  background-color: pink;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content {
+  background-color: tan;
+  text-align: center;
+}
+.bottom-content {
+  background-color: lightgrey;
+  text-align: center;
+}
+/* ///////////// */
+/* media queries */
+/* ///////////// */
+
+@media (max-width: 768px) {
+  .define {
+    display: none;
+  }
+  .testify {
+    display: none;
+  } 
+}
+
+@media(min-width: 769px) {
+  .top-content {
+    background-color: rgb(151, 122, 84);
+  }
+  }
+
+@media(min-width: 1024px){
+  .top-content {
+    background-color: rgb(136, 172, 218); 
+  }
+  /* .content {
+    flex-direction: row; 
+  } */
 }
