@@ -358,10 +358,13 @@ img {
 .kirin {
   padding-top: 10%;
   background-image: url(../img/kirin.jpg);
+  margin-bottom: 25px;
 }
 .candles {
   padding-top: 10%;
   background-image: url(../img/candles.jpg);
+  margin-bottom: 25px;
+
 }
 .succulents {
   padding-top: 10%;
@@ -373,50 +376,65 @@ img {
   margin-left: auto;
   width: 90%;
   max-width: 1400px;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 .header-content {
+  background-color: lightgrey;
   text-align: center;
 }
 
 h1 {
   font-size: 40px;
+  background-color: tan;
 }
 
 .top-content {
-  background-color: tan;
   text-align: center;
 }
+
 .bottom-content {
   background-color: lightgrey;
   text-align: center;
 }
+
 /* ///////////// */
 /* media queries */
 /* ///////////// */
 
-
-
 @media(min-width: 769px) {
-  .top-content {
+
+  h1 {
     background-color: rgb(151, 122, 84);
   }
+
   .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    /* align-content: space-between;  */
-  }
-  .flex-col {
-    width: 50%;
   }
 
+  .flex-col {
+    width: 48%;
   }
+
+  .kirin {
+    background-position: bottom center;
+  }
+
+  .candles {
+    background-position: bottom center;
+  }
+
+  .succulents {
+    background-position: bottom right;
+  }
+
+}
 
 @media(min-width: 1024px){
-  .top-content {
+  h1 {
     background-color: rgb(136, 172, 218); 
   }
 }
